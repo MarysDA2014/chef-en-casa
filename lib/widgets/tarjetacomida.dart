@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Tarjetacomida extends StatelessWidget {
-  final String puntaje="5";
-  const Tarjetacomida({Key? key}) : super(key: key);
+  final String puntaje;
+  const Tarjetacomida ({Key? key,required this.puntaje}) : super(key: key);
 
 
   @override
