@@ -7,15 +7,9 @@ class Inicio extends StatefulWidget {
   _InicioState createState() => _InicioState();
 }
 
-class MyApp extends StatelessWidget {
+class _InicioState extends State<Inicio> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Inicio de Sesión',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: LoginPage(),
-    );
+    return Container();
   }
 }
