@@ -35,7 +35,8 @@ class Tarjetacomida extends StatelessWidget {
             child: Icon(Icons.favorite, color: Colors.redAccent,),
             backgroundColor: Colors.white,
             radius: 16,
-          )
+          );
+        Text("Fácil", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 25),)
         ],
       ),
 
