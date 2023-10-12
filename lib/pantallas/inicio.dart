@@ -1,3 +1,4 @@
+import 'package:chef_en_casa/widgets/menu.dart';
 import 'package:flutter/material.dart';
 
 class Inicio extends StatefulWidget {
@@ -10,6 +11,21 @@ class Inicio extends StatefulWidget {
 class _InicioState extends State<Inicio> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold (
+      body: SafeArea(
+        child: Column(
+          children: [
+            // va el row del buscador
+            Row(children: [
+
+            ],)
+
+
+            // widget de carusel
+            // container con columna
+          ],
+        ),
+      ),
+    );
   }
 }
