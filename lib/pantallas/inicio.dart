@@ -23,8 +23,12 @@ class _InicioState extends State<Inicio> {
                     filled: true,
                     fillColor: Colors.cyan,
                     prefixIcon: const Icon(Icons.search),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(width: 1,color: Color(0xffF02E65)),
+                      borderRadius: BorderRadius.circular(30)
+                    ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(width: 3, color: Colors.blueAccent),
+                      borderSide: BorderSide(width: 1, color: Color(0xffF02E65)),
                       borderRadius: BorderRadius.circular(30),
                     )
                   ),
