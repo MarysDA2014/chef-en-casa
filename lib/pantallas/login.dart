@@ -15,8 +15,8 @@ class _LoginState extends State<Login> {
         child: Column (
           children: [
             Container(
-              width: 200.0,
-              height: 200.0,
+              width: 400,
+              height: 250,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/imagenes/encabezadoamarillo.png'), // Cambia la ruta por la de tu imagen
