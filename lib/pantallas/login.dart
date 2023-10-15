@@ -18,7 +18,7 @@ class _LoginState extends State<Login> {
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage('assets/imagenes/encabezadoamarillo.png'), // Cambia la ruta por la de tu imagen
-              fit: BoxFit.contain, // Opciones: BoxFit.cover, BoxFit.fill, etc
+              fit: BoxFit.fill, // Opciones: BoxFit.cover, BoxFit.fill, etc
             ),
           ),
           child: Column(
@@ -68,13 +68,17 @@ class _LoginState extends State<Login> {
                         ),
                       ),
                     ),
-                    Padding(
-                      padding:const EdgeInsets.fromLTRB(20, 0, 30, 0),
-                      child: Row(
 
-                      ),
-                    ),
-                    GestureDetector(
+                    Padding(
+                      padding:const EdgeInsets.fromLTRB(100, 5, 0, 50),
+                            child:const Text("Olvidaste tu contraseña?",
+                              style: TextStyle(
+                                  color: Colors.grey,
+                                      fontSize: 13,
+                              ),
+                            ),
+                          ),
+                    GestureDetector (
                       child: Container(
                         alignment: Alignment.center,
                         width: 250,
