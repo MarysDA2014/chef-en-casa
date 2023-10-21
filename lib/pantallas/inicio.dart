@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Inicio extends StatefulWidget {
   const Inicio({Key? key}) : super(key: key);
@@ -21,7 +22,7 @@ class _InicioState extends State<Inicio> {
             children: [
 
               Container(
-                width: MediaQuery.of(context).size.width * 0.8,
+                width: MediaQuery.of(context).size.width * 0.7,
 
                 child: TextField(
                   decoration: InputDecoration(
@@ -56,10 +57,27 @@ class _InicioState extends State<Inicio> {
           ),
 
           Container(child:
+            Column (children:[
 
-            Column( children:[
+              Material(
+                elevation:10, borderRadius: BorderRadius.all(Radius.circular(20)),
 
-              Material()
+                child: Container(
+                  padding: EdgeInsets.only(right: 20),
+                  alignment: Alignment.centerRight,
+                  height: 100, width: 400,
+                  decoration: BoxDecoration(
+                    color: Colors.white, borderRadius: BorderRadius.all(Radius.circular(20)),
+                  ),
+
+                  child: (Text("DESAYUNOS",
+                      style: GoogleFonts.redHatMono(
+                          textStyle: TextStyle(color: Color(0xff1B2551)),
+                          fontSize: 24,
+                          fontWeight: FontWeight.w700),
+                  )),
+                ),
+              ),
 
             ]),
           )
