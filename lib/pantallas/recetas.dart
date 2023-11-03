@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 
-class VistRecetas extends StatelessWidget {
+class Recetas extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +39,7 @@ class VistRecetas extends StatelessWidget {
                   child:
                   ///***If you have exported images you must have to copy those images in assets/images directory.
                   Image(
-                    image:NetworkImage("https://image.freepik.com/free-photo/side-view-doner-with-grilled-chicken-greens-lettuce-tomato-french-fries-table_141793-4881.jpg"),
+                    image: AssetImage("assets/imagenes/sanduche.jpeg"),
                     height:130,
                     width:100,
                     fit:BoxFit.cover,
@@ -147,7 +147,7 @@ class VistRecetas extends StatelessWidget {
                   child:
                   ///***If you have exported images you must have to copy those images in assets/images directory.
                   Image(
-                    image:NetworkImage("https://image.freepik.com/free-photo/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19744.jpg"),
+                    image: AssetImage("assets/imagenes/sanduche.jpeg"),
                     height:130,
                     width:100,
                     fit:BoxFit.cover,

@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Inicio extends StatefulWidget {
-  const Inicio({Key? key}) : super(key: key);
+//import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-  @override
-  _InicioState createState() => _InicioState();
-}
+class Inicio extends StatelessWidget {
+  final pageController = PageController();
 
-class _InicioState extends State<Inicio> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Color(0xfff6f6f6),
+
       body: Column(
         children: [
 
@@ -80,10 +79,78 @@ class _InicioState extends State<Inicio> {
               ),
 
             ]),
-          )
+          ),
+
+
+          //Buscador:
+          Padding(
+            padding:EdgeInsets.fromLTRB(0, 0, 0, 16),
+            child:SingleChildScrollView(
+              child:
+              Column(
+                mainAxisAlignment:MainAxisAlignment.start,
+                crossAxisAlignment:CrossAxisAlignment.start,
+                mainAxisSize:MainAxisSize.max,
+                children: [
+                  Padding(
+                    padding:EdgeInsets.all(16),
+                    child:TextField(
+                      controller:TextEditingController(),
+                      obscureText:false,
+                      textAlign:TextAlign.start,
+                      maxLines:1,
+                      style:TextStyle(
+                        fontWeight:FontWeight.w400,
+                        fontStyle:FontStyle.normal,
+                        fontSize:14,
+                        color:Color(0xff000000),
+                      ),
+                      decoration:InputDecoration(
+                        disabledBorder:OutlineInputBorder(
+                          borderRadius:BorderRadius.circular(4.0),
+                          borderSide:BorderSide(
+                              color:Color(0x00000000),
+                              width:1
+                          ),
+                        ),
+                        focusedBorder:OutlineInputBorder(
+                          borderRadius:BorderRadius.circular(4.0),
+                          borderSide:BorderSide(
+                              color:Color(0x00000000),
+                              width:1
+                          ),
+                        ),
+                        enabledBorder:OutlineInputBorder(
+                          borderRadius:BorderRadius.circular(4.0),
+                          borderSide:BorderSide(
+                              color:Color(0x00000000),
+                              width:1
+                          ),
+                        ),
+                        hintText:"Buscar receta..",
+                        hintStyle:TextStyle(
+                          fontWeight:FontWeight.w400,
+                          fontStyle:FontStyle.normal,
+                          fontSize:14,
+                          color:Color(0xff000000),
+                        ),
+                        filled:true,
+                        fillColor:Color(0xffebebec),
+                        isDense:false,
+                        contentPadding:EdgeInsets.all(8),
+                        prefixIcon:Icon(Icons.search,color:Color(0xff585858),size:24),
+                      ),
+                    ),
+                  ),
+
+
+                ],
+              ),
+            ),
+          ),
+
 
         ],)
-
     );
 
 
