@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:infinite_carousel/infinite_carousel.dart';
 
 //import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -142,17 +143,38 @@ class Inicio extends StatelessWidget {
                       ),
                     ),
                   ),
-
-
-                ],
-              ),
+                ],),
             ),
           ),
 
+          InfiniteCarousel.builder(
+            itemCount: 3,
+            itemExtent: 120,
+            center: true,
+            anchor: 0.0,
+            velocityFactor: 0.2,
+            onIndexChanged: (index) {},
+            controller: pageController,
+            axisDirection: Axis.horizontal,
+            loop: true,
+            itemBuilder: (context, itemIndex, realIndex){
+              return Align(
+                alignment: Alignment.topCenter,
+                child: Padding(
+                  padding: EdgeInsets.fromLTRB(0, 8, 0, 0),
+                  child: Image(image: AssetImage("assets/imagenes/sanduche.jpeg"),
+                    height: 200,
+                    width: MediaQuery.of(context).size.width,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              );
+
+            }, //itembuilder
+          )
 
         ],)
     );
-
 
   }
 }
