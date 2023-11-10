@@ -22,6 +22,7 @@ class Inicio extends StatelessWidget {
             children: [
 
               Container(
+                color: Colors.amber,
                 width: MediaQuery.of(context).size.width * 0.7,
 
                 child: TextField(
@@ -60,7 +61,7 @@ class Inicio extends StatelessWidget {
             Column (children:[
 
               Material(
-                elevation:10, borderRadius: BorderRadius.all(Radius.circular(20)),
+                elevation:2, borderRadius: BorderRadius.all(Radius.circular(13)),
 
                 child: Container(
                   padding: EdgeInsets.only(right: 20),
